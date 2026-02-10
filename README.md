@@ -22,35 +22,37 @@ It demonstrates a **legal AI chat interface**, **file upload**, **PDF viewer**, 
 ## Architecture
 
 src/
- ├─ app/
- │   ├─ providers/
- │   │   ├─ QueryProvider.tsx
- │   │   ├─ AuthProvider.tsx (mock)
- │   │   └─ ErrorBoundary.tsx
- │   ├─ store/
- │   │   └─ uiStore.ts (Zustand)
- │   └─ routes.tsx
- │
- ├─ components/
- │   ├─ atoms/
- │   ├─ molecules/
- │   └─ organisms/
- │
- ├─ features/
- │   ├─ auth/
- │   ├─ chat/
- │   ├─ upload/
- │   └─ pdf/
- │
- ├─ lib/
- │   ├─ api.ts (mock backend)
- │   └─ stream.ts (mock streaming)
- │
- ├─ pages/
- │   ├─ Login.tsx
- │   └─ Dashboard.tsx
- │
- └─ main.tsx
+├─ app/
+│  ├─ providers/
+│  │  ├─ QueryProvider.tsx        # TanStack Query client setup
+│  │  ├─ AuthProvider.tsx         # Authentication context (mocked)
+│  │  └─ ErrorBoundary.tsx        # Global error handling
+│  │
+│  ├─ store/
+│  │  └─ uiStore.ts               # Zustand store for UI state
+│  │
+│  └─ routes.tsx                  # Application route definitions
+│
+├─ components/
+│  ├─ atoms/                      # Small reusable UI elements
+│  ├─ molecules/                  # Combined atoms (inputs, buttons, etc.)
+│  └─ organisms/                  # Complex UI blocks (sidebar, header)
+│
+├─ features/
+│  ├─ auth/                       # Authentication & RBAC logic
+│  ├─ chat/                       # LegalMind chat interface & streaming
+│  ├─ upload/                     # Secure file upload flow
+│  └─ pdf/                        # PDF viewer & citation highlighting
+│
+├─ lib/
+│  ├─ api.ts                      # API layer (mock backend integration)
+│  └─ stream.ts                   # Mock streaming (SSE-like behavior)
+│
+├─ pages/
+│  ├─ Login.tsx                   # Login page
+│  └─ Dashboard.tsx               # Main application layout
+│
+└─ main.tsx                       # Application entry point
 
 ---
 
