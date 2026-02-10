@@ -6,6 +6,12 @@ It demonstrates a **legal AI chat interface**, **file upload**, **PDF viewer**, 
 
 ---
 
+## To Start Project
+- **npm install** 
+- **npm run dev** 
+
+---
+
 ## Tech Stack
 - **React + TypeScript (Vite)** — main framework
 - **Tailwind CSS v3** — utility-first styling
@@ -20,7 +26,7 @@ It demonstrates a **legal AI chat interface**, **file upload**, **PDF viewer**, 
 ---
 
 ## Architecture
-
+```
 src/
 ├─ app/
 │  ├─ providers/
@@ -53,8 +59,7 @@ src/
 │  └─ Dashboard.tsx               # Main application layout
 │
 └─ main.tsx                       # Application entry point
-
----
+```
 
 ## Features Implemented
 
