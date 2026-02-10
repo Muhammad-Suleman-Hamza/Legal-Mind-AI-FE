@@ -1,7 +1,7 @@
 # LegalMind Case Study — Fullstack Frontend Prototype
 
 ## Overview
-This is a **frontend prototype** for the Capgemini Full Stack Developer case study.  
+This is a **frontend prototype** for the Full Stack Developer case study.  
 It demonstrates a **legal AI chat interface**, **file upload**, **PDF viewer**, and **role based access control** (RBAC) using **React, TypeScript, Tailwind, Zustand, and React Query**.
 
 ---
