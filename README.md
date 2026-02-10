@@ -21,6 +21,37 @@ It demonstrates a **legal AI chat interface**, **file upload**, **PDF viewer**, 
 
 ## Architecture
 
+src/
+ ├─ app/
+ │   ├─ providers/
+ │   │   ├─ QueryProvider.tsx
+ │   │   ├─ AuthProvider.tsx (mock)
+ │   │   └─ ErrorBoundary.tsx
+ │   ├─ store/
+ │   │   └─ uiStore.ts (Zustand)
+ │   └─ routes.tsx
+ │
+ ├─ components/
+ │   ├─ atoms/
+ │   ├─ molecules/
+ │   └─ organisms/
+ │
+ ├─ features/
+ │   ├─ auth/
+ │   ├─ chat/
+ │   ├─ upload/
+ │   └─ pdf/
+ │
+ ├─ lib/
+ │   ├─ api.ts (mock backend)
+ │   └─ stream.ts (mock streaming)
+ │
+ ├─ pages/
+ │   ├─ Login.tsx
+ │   └─ Dashboard.tsx
+ │
+ └─ main.tsx
+
 ---
 
 ## Features Implemented
